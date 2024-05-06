@@ -10,8 +10,8 @@ systemctl disable firewalld.service
 
 
 while true; do
-	default_port=80
-	read -p "请输入监听端口：:" input_port
+	default_port=7000
+	read -p "请输入通信端口(7000):" input_port
 	[ -z "${default_port}" ] && default_port=${input_port}
 	if [ "" != "$default_port" ]; then
 		break
